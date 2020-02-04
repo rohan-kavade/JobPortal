@@ -33,13 +33,13 @@ namespace JobPortal.UI.Jobseeker.JsProfile
             using (SqlConnection sqlCon = new SqlConnection(cs))
             {
                 sqlCon.Open();
-                SqlCommand sqlCmd = new SqlCommand("insert into CompanyDetails (c_name, c_mail, c_password) values(@c_name,@c_mail,@c_password)", sqlCon);
-                sqlCmd.Parameters.AddWithValue("@c_name", txtName.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@c_mail", txtMail.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@c_password", txtPass.Text.Trim());
-                sqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Account Created Successfully");
-                Clear();
+               // SqlCommand sqlCmd = new SqlCommand("insert into CompanyDetails (c_name, c_mail, c_password) values(@c_name,@c_mail,@c_password)", sqlCon);
+               // sqlCmd.Parameters.AddWithValue("@c_name", txtName.Text.Trim());
+               // sqlCmd.Parameters.AddWithValue("@c_mail", txtMail.Text.Trim());
+               // sqlCmd.Parameters.AddWithValue("@c_password", txtPass.Text.Trim());
+               // sqlCmd.ExecuteNonQuery();
+              //  MessageBox.Show("Account Created Successfully");
+              //  Clear();
             }
 
 
