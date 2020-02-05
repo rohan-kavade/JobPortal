@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3E37ADB-51DA-43B9-B8E4-B310D6DB29C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JobPortal</RootNamespace>
+    <AssemblyName>JobPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="jobportalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jobportalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\AChangePass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\AChangePass.Designer.cs">
+      <DependentUpon>AChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\ACompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\ACompany.Designer.cs">
+      <DependentUpon>ACompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\ADashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\ADashboard.Designer.cs">
+      <DependentUpon>ADashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\AHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\AHome.Designer.cs">
+      <DependentUpon>AHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\AStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\AStudent.Designer.cs">
+      <DependentUpon>AStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\label.cs" />
+    <Compile Include="UI\Company\CApplied.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CApplied.Designer.cs">
+      <DependentUpon>CApplied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\CChangePass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CChangePass.Designer.cs">
+      <DependentUpon>CChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\CDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CDashboard.Designer.cs">
+      <DependentUpon>CDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\CHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CHome.Designer.cs">
+      <DependentUpon>CHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\label.cs" />
+    <Compile Include="UI\Company\CmProfile\CBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CmProfile\CBasic.Designer.cs">
+      <DependentUpon>CBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\CmProfile\CmHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CmProfile\CmHome.Designer.cs">
+      <DependentUpon>CmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\CProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\CProfile.Designer.cs">
+      <DependentUpon>CProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\LogCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Company\LogCompany.Designer.cs">
+      <DependentUpon>LogCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\PostJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Company\PostJob.Designer.cs">
+      <DependentUpon>PostJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Company\RegCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Company\RegCompany.Designer.cs">
+      <DependentUpon>RegCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\ApplyJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\ApplyJob.Designer.cs">
+      <DependentUpon>ApplyJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\Class1.cs" />
+    <Compile Include="UI\Jobseeker\ContactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JApplied.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JApplied.Designer.cs">
+      <DependentUpon>JApplied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JChangePass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JChangePass.Designer.cs">
+      <DependentUpon>JChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JDashboard.Designer.cs">
+      <DependentUpon>JDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JHome.Designer.cs">
+      <DependentUpon>JHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JProfile.Designer.cs">
+      <DependentUpon>JProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\J10th.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\J10th.Designer.cs">
+      <DependentUpon>J10th.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\J12th.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\J12th.Designer.cs">
+      <DependentUpon>J12th.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JBasic.Designer.cs">
+      <DependentUpon>JBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JPersonal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JPersonal.Designer.cs">
+      <DependentUpon>JPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jpg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jpg.Designer.cs">
+      <DependentUpon>Jpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JpHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JpHome.Designer.cs">
+      <DependentUpon>JpHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JRes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\JRes.Designer.cs">
+      <DependentUpon>JRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jug.Designer.cs">
+      <DependentUpon>Jug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jxp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\JsProfile\Jxp.Designer.cs">
+      <DependentUpon>Jxp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\LogJobseeker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\LogJobseeker.Designer.cs">
+      <DependentUpon>LogJobseeker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Jobseeker\RegJobseeker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Jobseeker\RegJobseeker.Designer.cs">
+      <DependentUpon>RegJobseeker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\LogAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\LogAdmin.Designer.cs">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Admin\AChangePass.resx">
+      <DependentUpon>AChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\ACompany.resx">
+      <DependentUpon>ACompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\ADashboard.resx">
+      <DependentUpon>ADashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\AHome.resx">
+      <DependentUpon>AHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\AStudent.resx">
+      <DependentUpon>AStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CApplied.resx">
+      <DependentUpon>CApplied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CChangePass.resx">
+      <DependentUpon>CChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CDashboard.resx">
+      <DependentUpon>CDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CHome.resx">
+      <DependentUpon>CHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CmProfile\CBasic.resx">
+      <DependentUpon>CBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CmProfile\CmHome.resx">
+      <DependentUpon>CmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\CProfile.resx">
+      <DependentUpon>CProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\LogCompany.resx">
+      <DependentUpon>LogCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\PostJob.resx">
+      <DependentUpon>PostJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Company\RegCompany.resx">
+      <DependentUpon>RegCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\ApplyJob.resx">
+      <DependentUpon>ApplyJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JApplied.resx">
+      <DependentUpon>JApplied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JChangePass.resx">
+      <DependentUpon>JChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JDashboard.resx">
+      <DependentUpon>JDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JHome.resx">
+      <DependentUpon>JHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JProfile.resx">
+      <DependentUpon>JProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\J10th.resx">
+      <DependentUpon>J10th.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\J12th.resx">
+      <DependentUpon>J12th.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\JBasic.resx">
+      <DependentUpon>JBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\JPersonal.resx">
+      <DependentUpon>JPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\Jpg.resx">
+      <DependentUpon>Jpg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\JpHome.resx">
+      <DependentUpon>JpHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\JRes.resx">
+      <DependentUpon>JRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\Jug.resx">
+      <DependentUpon>Jug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\JsProfile\Jxp.resx">
+      <DependentUpon>Jxp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\LogJobseeker.resx">
+      <DependentUpon>LogJobseeker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Jobseeker\RegJobseeker.resx">
+      <DependentUpon>RegJobseeker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\LogAdmin.resx">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="jobportalDataSet.xsc">
+      <DependentUpon>jobportalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jobportalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jobportalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jobportalDataSet.xss">
+      <DependentUpon>jobportalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JobPortal.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JobPortal_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>JobPortal.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
