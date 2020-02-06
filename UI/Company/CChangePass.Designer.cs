@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtPassCon = new System.Windows.Forms.TextBox();
             this.updateLabel = new System.Windows.Forms.LinkLabel();
-            this.textBoxSchool = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.labelGender = new System.Windows.Forms.Label();
             this.labelAddress = new System.Windows.Forms.Label();
             this.labelDob = new System.Windows.Forms.Label();
@@ -63,19 +63,19 @@
             this.label1.Text = "Change Password";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(290, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 20);
-            this.textBox2.TabIndex = 65;
+            this.txtPass.Location = new System.Drawing.Point(290, 158);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(222, 20);
+            this.txtPass.TabIndex = 65;
             // 
-            // textBox1
+            // txtPassCon
             // 
-            this.textBox1.Location = new System.Drawing.Point(290, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 20);
-            this.textBox1.TabIndex = 64;
+            this.txtPassCon.Location = new System.Drawing.Point(290, 206);
+            this.txtPassCon.Name = "txtPassCon";
+            this.txtPassCon.Size = new System.Drawing.Size(222, 20);
+            this.txtPassCon.TabIndex = 64;
             // 
             // updateLabel
             // 
@@ -92,13 +92,14 @@
             this.updateLabel.TabStop = true;
             this.updateLabel.Text = "Update";
             this.updateLabel.VisitedLinkColor = System.Drawing.Color.White;
+            this.updateLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.updateLabel_LinkClicked);
             // 
-            // textBoxSchool
+            // txtMail
             // 
-            this.textBoxSchool.Location = new System.Drawing.Point(290, 119);
-            this.textBoxSchool.Name = "textBoxSchool";
-            this.textBoxSchool.Size = new System.Drawing.Size(222, 20);
-            this.textBoxSchool.TabIndex = 62;
+            this.txtMail.Location = new System.Drawing.Point(290, 119);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(222, 20);
+            this.txtMail.TabIndex = 62;
             // 
             // labelGender
             // 
@@ -129,18 +130,18 @@
             this.labelDob.ForeColor = System.Drawing.Color.Tomato;
             this.labelDob.Location = new System.Drawing.Point(112, 119);
             this.labelDob.Name = "labelDob";
-            this.labelDob.Size = new System.Drawing.Size(106, 20);
+            this.labelDob.Size = new System.Drawing.Size(126, 20);
             this.labelDob.TabIndex = 59;
-            this.labelDob.Text = "Old Password";
+            this.labelDob.Text = "Enter Username";
             // 
             // CChangePass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtPassCon);
             this.Controls.Add(this.updateLabel);
-            this.Controls.Add(this.textBoxSchool);
+            this.Controls.Add(this.txtMail);
             this.Controls.Add(this.labelGender);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelDob);
@@ -158,10 +159,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtPassCon;
         private System.Windows.Forms.LinkLabel updateLabel;
-        private System.Windows.Forms.TextBox textBoxSchool;
+        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label labelGender;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Label labelDob;

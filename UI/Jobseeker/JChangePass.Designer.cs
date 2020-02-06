@@ -30,19 +30,21 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtPassCon = new System.Windows.Forms.TextBox();
             this.updateLabel = new System.Windows.Forms.LinkLabel();
-            this.textBoxSchool = new System.Windows.Forms.TextBox();
             this.labelGender = new System.Windows.Forms.Label();
             this.labelAddress = new System.Windows.Forms.Label();
-            this.labelDob = new System.Windows.Forms.Label();
+            this.lbluser = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.lbluser);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -63,19 +65,19 @@
             this.label1.Text = "Change Password";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(290, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 20);
-            this.textBox2.TabIndex = 65;
+            this.txtPass.Location = new System.Drawing.Point(290, 158);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(222, 20);
+            this.txtPass.TabIndex = 65;
             // 
-            // textBox1
+            // txtPassCon
             // 
-            this.textBox1.Location = new System.Drawing.Point(290, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 20);
-            this.textBox1.TabIndex = 64;
+            this.txtPassCon.Location = new System.Drawing.Point(290, 206);
+            this.txtPassCon.Name = "txtPassCon";
+            this.txtPassCon.Size = new System.Drawing.Size(222, 20);
+            this.txtPassCon.TabIndex = 64;
             // 
             // updateLabel
             // 
@@ -92,13 +94,7 @@
             this.updateLabel.TabStop = true;
             this.updateLabel.Text = "Update";
             this.updateLabel.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // textBoxSchool
-            // 
-            this.textBoxSchool.Location = new System.Drawing.Point(290, 119);
-            this.textBoxSchool.Name = "textBoxSchool";
-            this.textBoxSchool.Size = new System.Drawing.Size(222, 20);
-            this.textBoxSchool.TabIndex = 62;
+            this.updateLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.updateLabel_LinkClicked);
             // 
             // labelGender
             // 
@@ -122,28 +118,44 @@
             this.labelAddress.TabIndex = 60;
             this.labelAddress.Text = "Confirm New Password";
             // 
-            // labelDob
+            // lbluser
             // 
-            this.labelDob.AutoSize = true;
-            this.labelDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDob.ForeColor = System.Drawing.Color.Tomato;
-            this.labelDob.Location = new System.Drawing.Point(112, 119);
-            this.labelDob.Name = "labelDob";
-            this.labelDob.Size = new System.Drawing.Size(106, 20);
-            this.labelDob.TabIndex = 59;
-            this.labelDob.Text = "Old Password";
+            this.lbluser.AutoSize = true;
+            this.lbluser.Location = new System.Drawing.Point(550, 29);
+            this.lbluser.Name = "lbluser";
+            this.lbluser.Size = new System.Drawing.Size(13, 13);
+            this.lbluser.TabIndex = 1;
+            this.lbluser.Text = "3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Tomato;
+            this.label2.Location = new System.Drawing.Point(112, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 20);
+            this.label2.TabIndex = 66;
+            this.label2.Text = "Enter Username";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(290, 116);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(222, 20);
+            this.txtMail.TabIndex = 67;
             // 
             // JChangePass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtPassCon);
             this.Controls.Add(this.updateLabel);
-            this.Controls.Add(this.textBoxSchool);
             this.Controls.Add(this.labelGender);
             this.Controls.Add(this.labelAddress);
-            this.Controls.Add(this.labelDob);
             this.Controls.Add(this.panel1);
             this.Name = "JChangePass";
             this.Size = new System.Drawing.Size(625, 417);
@@ -158,12 +170,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtPassCon;
         private System.Windows.Forms.LinkLabel updateLabel;
-        private System.Windows.Forms.TextBox textBoxSchool;
         private System.Windows.Forms.Label labelGender;
         private System.Windows.Forms.Label labelAddress;
-        private System.Windows.Forms.Label labelDob;
+        private System.Windows.Forms.Label lbluser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMail;
     }
 }

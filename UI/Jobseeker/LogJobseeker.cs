@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace JobPortal.UI.Jobseeker
 {
@@ -17,7 +18,7 @@ namespace JobPortal.UI.Jobseeker
         {
             InitializeComponent();
         }
-        string cs = @"Data Source=DESKTOP-O1T1LH0\SQLEXPRESS;Initial Catalog=jobportal;Integrated Security=True";
+        static string cs = ConfigurationManager.ConnectionStrings["JobPortal.Properties.Settings.cs"].ConnectionString;
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
