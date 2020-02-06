@@ -120,15 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAa5JREFUaEPt
-        mktOwzAYhHsJEI8jwUVgzeMA5VpwCFhwDh4LWMF8oZaiyMQTOyVW8CeN2kjjaEZO01R/N41GI5tz6V56
-        l74W1ptEljNpEndS7IQ1aCtZsBMs+JCupGNpachwLZGJbNbOPEiYKVEbNxLZuMyScD1iPuqO6oJMZHvt
-        jhJgRLVi52tF/ohWpDZakRQX0uHP2yxYyzlc9lLkUsL7JOWUYQ1rOQfncrDz2UZxID1K+J+lKY8zw7Xu
-        F7CdzzbuyCmTWwLsfLaxx5QyJSXAzmcbBzhlSkuAnc82RhgrM0cJsPPZxl+IlZmrBNj5bOMI/dsqr/33
-        Jd85YOezjQn6u4BKdyJg57ONCWJFnFtzCjufbRxhFZdW7IMduwHkYuezjRHG7k5zlbHz2cYBYyUCc5Sx
-        89nGHk6JQGkZO59t3DGlRKCkjJ3PNoqcEoHcMnY+2yhW88MKVvFTdwlakdpoRWrj/xVhiIIx96Fun5xK
-        ZHvpjhIw1sLMzK42biWyWaM3Bo2YGTwyszuRloYMlPiUyGaPqRkBs6BG2ePpAK3ZwjAcXVLZfxhoNBqw
-        2XwDy6mTEcxmKbYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAgdJREFUaEPt
+        mk1OwzAQhXsJUIEj0YvAmp8DlGvBIWDBOfhZwAr8JFuKqsb+xpkmVmRLVjbP9vfGztTRdLPprUegR6A2
+        Arsw8Dn079D/Fu5fkeXaauZpYfBc4PbUjHZCE/2Efhf6BR14Qp0Y7iOT2NDOvEQjMtFae4hsOvLFpvMo
+        19uicn6BmMT2SZZO55Nol9BgPixcwsUgCRWX70aKIfIR4EBjoQ+XeRbMh4VmBJ8BmA8LI9dNeJ5PYNRY
+        zUEb5sPCsPJtzCJvlWZkQmO1puYiDfNhYVj1LPTXCPIenpbrzOFY+gOM+bAwhq/GTK0JLYn5sHBwDixm
+        ppg4uREtQMxMNTGLkZIZDxOzGRkz42ViViNabJhWlV5Tiq1N08O0jN9hLCwk/eEuaE6lZ5pic1NjPiys
+        MGL5nRmbHvNhYcbIKo7WsRebpGZyPZntZc9lJy8z+MRg4UEISYr1MIP5sDBzRcllp6lmMB8WjlwaSYqd
+        YgbzYeGR+xUxkTay1gzmw8JAtJoPK0V3FZ+6NPd76vCJwUJPOsNcmA8LDYt7SjEfFnrSGebCfFhoWNxT
+        ivmw0JPOMBfmUxFFYo9vBwMfkl5Ftg+iVllLRlSza609RjZUelOhUUZUDFXN7rIBN2KQid/Ihoqh4lYJ
+        OJ3F1p64PJ02QK61hak4uqSh6j8MNHCaOkKPQBMR+AfLqZMRsr6uFwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
